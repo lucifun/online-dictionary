@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>在线词典</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <!-- 单词翻译模块 -->
+    <div class="translate-block">
+        <div class="logo">
+            <img src="images/dictionary.png" alt="logo">
+            <h2>在线词典</h2>
+        </div>
+        <div class="wordSearch">
+            <input type="text" name="search" maxlength="30" autofocus class="search">
+            <input type="button" value="翻译" class="btn">
+        </div>
+
+        <div class="result">
+            <p class="result-translation"></p>
+            <input type="button" class="result-btn" value="加入生词本">
+        </div>
+
+        <input type="button" value="显示生词本" class="wordbookbtn" >
+
+    </div>
+
+    <div class="words-block">
+    <!-- table start -->
+        <table class="words-table" border="1" style="border-collapse:collapse">
+        </table>
+
+        <div class="test-block">
+            <div class="test-tips"></div>
+            <div class="test-input" >
+                <input type="text" class="test-word" autofocus>
+                <input type="button" value="确定" class="test-btn">
+            </div>
+        </div>
+
+
+        <input type="button" value="新单词测试" class="testwordsbtn">
+
+
+        <!-- table end -->
+
+    </div>
+</div>
+    
+
+
+<script src="js/dictionary.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/search.js"></script>
+</body>
+
+</html>
