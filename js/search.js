@@ -82,7 +82,7 @@ $(document).ready(function () {
             $('.words-table').append(newTr);
             var newTd = document.createElement('td');
             newTd.innerHTML = i;
-            newTr.append(newTd);
+            newTr.appendChild(newTd);
             newTd = document.createElement('td');
             newTd.innerHTML = newWords[i];
             newTr.appendChild(newTd);
